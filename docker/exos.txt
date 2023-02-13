@@ -16,6 +16,6 @@ Ecrire le script arrêtant et supprimant ces conteneurs (exo1_destroy.sh)
 3. Construire (Dockerfile) une image personnalisée basée sur redis:6.2-bullseye
 Cette image devra disposer des commandes curl, zip.
 Lancer un conteneur basé sur cette image.
-Vérifier que les commandes curl, zip et ps sont bien embarquées dans le conteneur.
+Vérifier que les commandes curl et zip sont bien embarquées dans le conteneur.
 
 N.b: sur l'OS bullseye (debian), le commande "apt install -y <package_name>" permet d'installer un paquet avec confirmation automatique (-y)

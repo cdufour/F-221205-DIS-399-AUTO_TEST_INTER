@@ -1,0 +1,17 @@
+version: '3'
+services:
+  
+  web:
+    build: .
+    image: formation-docker/simpleweb
+    ports:
+    - 3000:3000
+  
+  redis:
+    image: redis:7-alpine
+    volumes:
+    - redis_data:/data
+
+# création et spécification de volumes nommés
+volumes:
+  redis_data: {}
